@@ -1,4 +1,3 @@
-/* eslint-disable import/no-extraneous-dependencies */
 import readlineSync from 'readline-sync';
 
 export default () => {
