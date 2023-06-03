@@ -1,9 +1,9 @@
 #!/usr/bin/env node
 
 import readlineSync from 'readline-sync';
-import { naming, answering, comparison, congratulations } from '../src/index.js'
+import { welcome, naming, answering, comparison, congratulations } from '../src/index.js'
 
-welcome()
+welcome() 
 //const name = readlineSync.question('May I have your name? ');
 //console.log(`Hello, ${name}!`);
 const name = naming();
