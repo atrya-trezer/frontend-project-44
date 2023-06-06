@@ -24,7 +24,6 @@ while (i < 3) {
     //  console.log(`Let's try again, ${name}!`);
     //  i = 0;
     //}
-    i = comparison(answer, correctAnswer, name, i);
   } else {
     const correctAnswer = 'no';
     //if (answer === correctAnswer) {
@@ -35,8 +34,8 @@ while (i < 3) {
     //  console.log(`Let's try again, ${name}!`);
     //  i = 0;
     //}
-    i = comparison(answer, correctAnswer, name, i);
   }
+  i = comparison(answer, correctAnswer, name, i);
 }
 //console.log(`Congratulations, ${name}!`);
 congratulations(name);
