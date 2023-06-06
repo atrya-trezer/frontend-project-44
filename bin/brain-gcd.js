@@ -1,9 +1,8 @@
 #!/usr/bin/env node
 
-import readlineSync from 'readline-sync';
 import { welcome, naming, answering, comparison, congratulations } from '../src/index.js'
 
-welcome() 
+welcome();
 const name = naming();
 console.log('Find the greatest common divisor of given numbers.')
 

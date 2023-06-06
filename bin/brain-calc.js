@@ -1,6 +1,5 @@
 #!/usr/bin/env node
 
-import readlineSync from 'readline-sync';
 import { welcome, naming, answering, comparison, congratulations } from '../src/index.js';
 const actions = {
   '+': function(a, b){ return a + b},
@@ -9,7 +8,7 @@ const actions = {
 };
 
 //console.log('Welcome to the Brain Games!');
-welcome()
+welcome();
 //const name = readlineSync.question('May I have your name? ');
 //console.log(`Hello, ${name}!`);
 const name = naming();
