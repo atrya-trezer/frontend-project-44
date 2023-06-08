@@ -14,17 +14,16 @@ const answering = () => {
 };
 const comparison = (answer, correctAnswer, name, i) => {
   if (answer === correctAnswer) {
-      console.log('Correct!');
-      i += 1;
-      return i;
-    } else {
-      console.log(`'${answer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
-      console.log(`Let's try again, ${name}!`);
-      return false;
-    }
+    console.log('Correct!');
+    return i + 1;
+  }
+  console.log(`'${answer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
+  console.log(`Let's try again, ${name}!`);
+  return false;
 };
 const congratulations = (name) => {
   console.log(`Congratulations, ${name}!`);
 };
-export { welcome, naming, answering, comparison, congratulations }
-
+export {
+  welcome, naming, answering, comparison, congratulations,
+};
