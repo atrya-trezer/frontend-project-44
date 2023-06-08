@@ -1,10 +1,12 @@
 #!/usr/bin/env node
 
-import { welcome, naming, answering, comparison, congratulations } from '../src/index.js'
+import {
+  welcome, naming, answering, comparison, congratulations,
+} from '../src/index.js';
 
 welcome();
 const name = naming();
-console.log('Find the greatest common divisor of given numbers.')
+console.log('Find the greatest common divisor of given numbers.');
 
 const gcd = (x, y) => {
   for (let i = x; i > 0; i -= 1) {
@@ -12,7 +14,8 @@ const gcd = (x, y) => {
       return i;
     }
   }
-}
+  return 1;
+};
 
 let i = 0;
 while (i < 3) {

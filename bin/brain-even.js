@@ -1,6 +1,8 @@
 #!/usr/bin/env node
 
-import { welcome, naming, answering, comparison, congratulations } from '../src/index.js'
+import {
+  welcome, naming, answering, comparison, congratulations,
+} from '../src/index.js';
 
 welcome();
 const name = naming();
