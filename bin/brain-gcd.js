@@ -22,5 +22,10 @@ while (i < 3) {
   const answer = Number(answering());
   const correctAnswer = gcd(random1, random2);
   i = comparison(answer, correctAnswer, name, i);
+  if (!i) {
+    break;
+  }
 }
-congratulations(name);
+if (i) {
+  congratulations(name);
+}

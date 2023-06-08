@@ -21,5 +21,10 @@ while (correct_answers < 3) {
   console.log(`Question: ${randomProgression.join(' ')}`);
   const answer = Number(answering());
   correct_answers = comparison(answer, correctAnswer, name, correct_answers);
+  if (!correct_answers) {
+    break;
+  }
 }
+if (correct_answers) {
 congratulations(name);
+}

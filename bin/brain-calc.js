@@ -32,6 +32,11 @@ while (i < 3) {
   //  i = 0;
   //}
   i = comparison(answer, correctAnswer, name, i);
+  if (!i) {
+    break;
+  }
 }
 //console.log(`Congratulations, ${name}!`);
-congratulations(name);
+if (i) {
+  congratulations(name);
+}

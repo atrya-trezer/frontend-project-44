@@ -26,5 +26,10 @@ while (i < 3) {
     correctAnswer = 'no';
   }
   i = comparison(answer, correctAnswer, name, i);
+  if (!i) {
+    break;
+  }
 }
-congratulations(name);
+if (i) {
+  congratulations(name);
+}
